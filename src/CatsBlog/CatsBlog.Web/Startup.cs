@@ -64,18 +64,6 @@ namespace CatsBlog.Web
             var serviceProvider = serviceScope.ServiceProvider;
             var dbContext = serviceProvider.GetRequiredService<CatsDbContext>();
             dbContext.Seed();
-
-            //    app.UseHttpsRedirection();
-
-            //    app.UseRouting();
-
-            //    app.UseAuthorization();
-
-            //    app.UseEndpoints(endpoints =>
-            //    {
-            //        endpoints.MapControllers();
-            //    });
-            //}
         }
     }
 }

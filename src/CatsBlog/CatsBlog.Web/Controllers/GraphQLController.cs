@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CatsBlog.Web.Controllers
 {
-    [Route("graphqlhttp")]
+    [Route("graphqltest")]
     [ApiController]
     public class GraphQLController : Controller
     {
@@ -19,7 +19,6 @@ namespace CatsBlog.Web.Controllers
             this.executer = executer;
         }
 
-        [Route("test")]
         [HttpPost]
         public async Task<ActionResult> Post(GraphQLQuery query)
         {
